@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:heart_pottery_sherd",
+    "minecraft:heart_pottery_sherd",
+    "minecraft:heart_pottery_sherd",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "components": {
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "healing_potion_made"
+        ]
+      },
+      "minecraft:custom_name": {
+        "text": "Healing Potion",
+        "color": "gold"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "sound": {
+          "sound_id": "addons:entity.potions.drink",
+          "range": 1
+        },
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 4,
+                "duration": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "count": 1,
+    "id": "minecraft:pumpkin_pie"
+  }
+}

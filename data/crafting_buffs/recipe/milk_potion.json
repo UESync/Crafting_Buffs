@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "danger_pottery_sherd",
+    "minecraft:milk_bucket",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "components": {
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "milk_potion_made"
+        ]
+      },
+      "minecraft:custom_name": {
+        "text": "Milk Potion",
+        "color": "gold"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "sound": {
+          "sound_id": "addons:entity.potions.drink",
+          "range": 1
+        },
+        "on_consume_effects": [
+          {
+            "type": "minecraft:clear_all_effects"
+          }
+        ]
+      }
+    },
+    "count": 1,
+    "id": "minecraft:pumpkin_pie"
+  }
+}

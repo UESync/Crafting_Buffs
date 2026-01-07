@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": "minecraft:heart_pottery_sherd",
+    "B": "minecraft:blade_pottery_sherd",
+    "C": "minecraft:danger_pottery_sherd"
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "CCC"
+  ],
+  "result": {
+    "components": {
+      "minecraft:food": {
+        "nutrition": 12,
+        "saturation": 12,
+        "can_always_eat": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "medical_kit_made"
+        ]
+      },
+      "minecraft:custom_name": {
+        "text": "Medical Kit",
+        "color": "gold"
+      },
+      "minecraft:consumable": {
+        "animation": "eat",
+        "sound": {
+          "sound_id": "addons:entity.buff.use",
+          "range": 1
+        },
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:fire_resistance",
+                "amplifier": 0,
+                "duration": 1200
+              },
+              {
+                "id": "minecraft:absorption",
+                "amplifier": 4,
+                "duration": 1200
+              },
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 2,
+                "duration": 1200
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "count": 1,
+    "id": "minecraft:pumpkin_pie"
+  }
+}
