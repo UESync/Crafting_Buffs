@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    "danger_pottery_sherd",
+    "minecraft:paper",
     "minecraft:milk_bucket",
-    "minecraft:glass_bottle"
+    "minecraft:honey_bottle"
   ],
   "result": {
     "components": {

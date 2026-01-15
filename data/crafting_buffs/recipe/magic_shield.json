@@ -1,12 +1,15 @@
 {
 "type": "minecraft:crafting_shaped",
   "key": {
-    "X": "minecraft:danger_pottery_sherd"
+    "A": "minecraft:amethyst_shard",
+    "B": "minecraft:netherite_upgrade_smithing_template",
+    "C": "minecraft:end_crystal",
+    "D": "#minecraft:chest_armor"
   },
   "pattern": [
-    "X X",
-    "XXX",
-    " X "
+    "A A",
+    "BDB",
+    " C "
   ],
   "result": {
     "components": {
@@ -37,6 +40,11 @@
               {
                 "id": "minecraft:resistance",
                 "amplifier": 3,
+                "duration": 1200
+              },
+              {
+                "id": "minecraft:glowing",
+                "amplifier": 0,
                 "duration": 1200
               }
             ]

@@ -1,14 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "A": "minecraft:heart_pottery_sherd",
-    "B": "minecraft:blade_pottery_sherd",
-    "C": "minecraft:danger_pottery_sherd"
+    "A": "minecraft:golden_apple",
+    "B": "minecraft:magma_cream",
+    "C": "#minecraft:bundles",
+    "D": "minecraft:shears",
+    "E": "#minecraft:wool"
   },
   "pattern": [
     "AAA",
-    "BBB",
-    "CCC"
+    "BCD",
+    "EEE"
   ],
   "result": {
     "components": {

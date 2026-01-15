@@ -1,10 +1,10 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    "minecraft:blade_pottery_sherd",
-    "minecraft:blade_pottery_sherd",
-    "minecraft:blade_pottery_sherd",
-    "minecraft:glass_bottle"
+    "minecraft:blaze_rod",
+    "#minecraft:pickaxes",
+    "#minecraft:swords",
+    "minecraft:honey_bottle"
   ],
   "result": {
     "components": {

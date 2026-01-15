@@ -2,11 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": "minecraft:feather",
-    "B": "minecraft:danger_pottery_sherd"
+    "B": "minecraft:sugar",
+    "C": "minecraft:red_dye",
+    "D": "minecraft:leather_boots"
   },
   "pattern": [
-    "AA",
-    "BB"
+    "A A",
+    "BDB",
+    "C C"
   ],
   "result": {
     "components": {
