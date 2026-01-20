@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:cocoa_beans",
+    "minecraft:glow_berries",
+    "minecraft:glowstone_dust",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "components": {
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "energy_drink_made"
+        ]
+      },
+      "minecraft:custom_name": {
+        "text": "Energy Drink",
+        "color": "gold"
+      },
+      "minecraft:consumable": {
+        "animation": "drink",
+        "sound": "minecraft:entity.generic.drink",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:saturation",
+                "amplifier": 1,
+                "duration": 6000
+              },
+              {
+                "id": "minecraft:hunger",
+                "amplifier": 0,
+                "duration": 9000
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "count": 1,
+    "id": "minecraft:pumpkin_pie"
+  }
+}

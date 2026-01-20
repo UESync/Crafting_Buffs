@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:rotten_flesh",
+    "minecraft:spider_eye",
+    "minecraft:sugar",
+    "minecraft:nether_wart"
+  ],
+  "result": {
+    "components": {
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "antidote_made"
+        ]
+      },
+      "minecraft:custom_name": {
+        "text": "Antidote",
+        "color": "gold"
+      },
+      "minecraft:consumable": {
+        "animation": "eat",
+        "sound": "minecraft:entity.generic.eat",
+        "on_consume_effects": [
+          {
+            "type": "minecraft:remove_effects",
+            "effects": [
+              "minecraft:mining_fatigue",
+              "minecraft:weakness",
+              "minecraft:nausea",
+              "minecraft:poison",
+              "minecraft:wither"
+            ]
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:wind_charged",
+                "amplifier": 0,
+                "duration": 200
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "count": 1,
+    "id": "minecraft:pumpkin_pie"
+  }
+}
