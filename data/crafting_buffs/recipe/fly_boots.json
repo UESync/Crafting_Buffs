@@ -48,7 +48,7 @@
                 "duration": 3600
               },
               {
-                "id": "minecraft:slow_falling",
+                "id": "minecraft:jump_boost",
                 "amplifier": 0,
                 "duration": 3600
               }
